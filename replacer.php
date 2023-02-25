@@ -25,5 +25,7 @@ for($i = 0; $i < count($lookups); $i++) {
 
 unserialize($broken_serialized);
 
-echo "#### nuovo valore serializzato non rotto\n\n";
-echo $broken_serialized;
+// echo "#### nuovo valore serializzato non rotto\n\n";
+// echo $broken_serialized;
+
+file_put_contents("output.txt", $broken_serialized);
